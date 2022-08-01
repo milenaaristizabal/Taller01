@@ -1,0 +1,123 @@
+@import url(&#39;https://fonts.googleapis.com/css2?family=Marcellus&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap&#39;);
+
+:root {
+
+    --azulclaro: #48D6ED;
+    --azuloscuro: #337AB7;
+    --azulnegro: #303342;
+    --negro: #333333;
+    --negro2: #000;
+    --gris: #B2B3B3;
+    --fondo: #FFFEFC;
+    --verdeazul: #157A8A;
+    --Magenta: #9C2759;
+    --blanco: #fff;
+    --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+}
+
+* {
+    margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url(../img/fondo.jpg) no-repeat center top;
+  background-size: cover;
+  font-family: sans-serif;
+  height: 100vh;
+}
+
+.container-form .svg {
+  width: 100%;
+}
+
+.image {
+  margin-top: -120px;
+  padding: 20px;
+  display: flex;
+  float: left;
+  margin-right: 50%;
+  width: 200px;
+}
+.login-box input {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.login-box input[type="text"], .login-box input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+  width: 80%;
+}
+
+.login-box input[type="submit"] {
+  border: none;
+  outline: none;
+  width: 50%;
+  height: 40px;
+  background: #0e0203;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.container-form {
+  color: var(--blanco);
+  display: flex;
+  flex-direction: column;
+  height: 425px;
+  width: 400px;
+  align-items: center;
+  margin: auto;
+  margin-top: 130px;
+  background-color: rgba(76, 140, 192, 0.85);
+  border-radius: 3px;
+  font-size: 18px;
+}
+.container-form span {
+  width: 65%;
+  margin-top: 20px;
+}
+
+.container-form p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.container-form a {
+  color: var(--negro2);
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .container-form {
+      display: flex;
+      flex-direction: column;
+      height: 415px;
+      width: 385px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container-form {
+      display: flex;
+      flex-direction: column;
+      height: 420px;
+      width: 395px;
+  }
+}
+
+@media screen and (min-width: 1308px) {
+  .container-form {
+      display: flex;
+      flex-direction: column;
+      height: 425px;
+      width: 400px;
+  }
+}
