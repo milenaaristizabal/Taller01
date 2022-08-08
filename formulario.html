@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link href="css/estilo_formulario.css" rel="stylesheet">
+
+    <title>Formulario</title>
+  </head>
+  <body>
+    <div class="col-xl-7 col-lg-12 d-flex">
+            <div class="contenedor-azul">            
+                <img class="logo" src="img/Hotelia horizontal blanco.svg">   
+                <p id="frase">Eres más que <br>bienvenido</p>
+            </div>
+
+            <div class="feature4 feature-white4">
+                <p id="ti">Regístrate</p><br> 
+                <form>
+                    <div class="form-row mb-2">
+                        <div class="form-group col-md-6">
+                            <label>Tipo Documento <span class="text-danger">*</span></label><br>
+                            <select name="color" class="form-control" placeholder="Escoja una opción" required>
+                                <option value="cc">CC</option>
+                                <option value="ti">TI</option>
+                                <option value="otro">Otro</option>
+                              </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Numero de Documento <span class="text-danger">*</span></label>
+                            <input type="number" class="form-control" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Nombres <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Apellidos <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Fecha Nacimiento <span class="text-danger">*</span></label>
+                            <input type="date" class="form-control" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Genero <span class="text-danger">*</span></label><br>
+                            <input type="radio" name="genero" value="1">Hombre
+                            <input type="radio" name="genero" value="2">Mujer
+                            <input type="radio" name="genero" value="3">Otro<br>
+                        </div>
+                        <div class="form-group col-md-6">
+                        <label>Correo electrónico <span class="text-danger">*</span></label>
+                        <input type="email" class="form-control" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Telefono de Contacto <span class="text-danger">*</span></label>
+                            <input type="number" class="form-control" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Pais de origen <span class="text-danger">*</span></label><br>
+                            <select name="pais" class="form-control" placeholder="Escoja una opción">
+                                <option value="cc">Colombia</option>
+                                <option value="ti">Venezuela</option>
+                                <option value="otro">Chile</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Foto <span class="text-danger">*</span></label>
+                            <input type="file" class="form-control" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Contraseña <span class="text-danger">*</span></label>
+                            <input type="password" class="form-control" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Confirmar Contraseña<span class="text-danger">*</span></label>
+                            <input type="password" class="form-control" required>
+                        </div>
+                        </div>
+                                        
+                        <div class="form-group mb-5">
+                        <div class="form-check">
+                            
+                            <!-- Trigger/Open The Modal -->
+       
+       <input  class="form-check-label text-muted" id="myBtn" type="checkbox">
+        <label class="form-check-label text-muted" id="myBtn">Términos y condiciones</label>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="titulo-modal">
+    <p id="frase">Términos y condiciones</p>
+</div>
+<br>
+    <p>Estos Términos del Servicio reflejan la forma de trabajar de Google como empresa, las leyes por las que nos regimos y determinados aspectos que siempre hemos creído que son ciertos. Por ello, estos Términos del Servicio ayudan a definir la relación que tiene Google contigo cuando interactúas con nuestros servicios. Por ejemplo, estos términos incluyen las siguientes secciones:
+        Qué puedes esperar de nosotros, donde se describe cómo proporcionamos y desarrollamos nuestros servicios.
+        LO que esperamos de ti, donde se establecen ciertas reglas para utilizar nuestros servicios. 
+        </p>
+        
+        <a href="formulario.html"><button class="btn btn-dark width-100">Aceptar</button></a>
+                </div>
+            </div>
+                    </div>
+                    </div>
+                    <div class="ingresar">
+                        <a href="dashboard.html"><button class="btn btn-dark width-100">Ingresar</button></a>
+
+                </div>
+                </form>
+            </div>
+        </div>
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+
+  </body>
+</html>
